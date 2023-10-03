@@ -1,0 +1,46 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+}
+
+.row {
+    display: contents;
+}
+
+.col1 { grid-column: span 1; }
+.col2 { grid-column: span 2; }
+.col3 { grid-column: span 3; }
+.col4 { grid-column: span 4; }
+.col5 { grid-column: span 5; }
+.col6 { grid-column: span 6; }
+.col7 { grid-column: span 7; }
+.col8 { grid-column: span 8; }
+.col9 { grid-column: span 9; }
+.col10 { grid-column: span 10; }
+.col11 { grid-column: span 11; }
+.col12 { grid-column: span 12; }
+
+.pagetitle {
+    grid-column: 1 / -1; /* 全てのカラムを占有 */
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.main {
+    grid-column: 4 / 10;
+    text-align: center;
+}
+
+.description {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.intro {
+    text-align: left;
+}
