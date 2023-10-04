@@ -24,7 +24,7 @@
 .col11 { grid-column: span 11; }
 .col12 { grid-column: span 12; }
 
-.pagetitle {
+.pageTitle {
     grid-column: 1 / -1; /* 全てのカラムを占有 */
     font-size: 2rem;
     font-weight: bold;
@@ -41,6 +41,11 @@
     text-align: center;
 }
 
-.intro {
+.textLeft {
     text-align: left;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between; 
 }

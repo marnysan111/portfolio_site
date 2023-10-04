@@ -1,6 +1,4 @@
 import styles from "../../styles/Container.module.css";
-import Image from "next/image";
-import Icon from "../img/icon.jpeg";
 
 export default function Home() {
   return (

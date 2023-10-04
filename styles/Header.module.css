@@ -1,15 +1,21 @@
 .header {
     display: flex;
-    background-color: #008080;
-    color: white;
+    justify-content: space-between; 
+    align-items: center; 
     padding: 16px;
+    background-color: #008080;
 }
 
-.header a {
+.buttonGroup {
+    display: flex;
+    gap: 8px;
+}
+
+.button {
+    padding: 8px 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
     text-decoration: none;
-    font-weight: bold;
-}
-
-.header a:hover {
-    text-decoration: underline;
 }
