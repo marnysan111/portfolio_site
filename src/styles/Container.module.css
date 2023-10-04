@@ -7,10 +7,6 @@
     padding-left: var(--bs-gutter-x,.75rem);
 }
 
-.row {
-    display: contents;
-}
-
 .col1 { grid-column: span 1; }
 .col2 { grid-column: span 2; }
 .col3 { grid-column: span 3; }

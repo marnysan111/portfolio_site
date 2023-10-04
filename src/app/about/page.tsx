@@ -1,23 +1,23 @@
-import styles from "../../../styles/Container.module.css";
+import styles from "@/styles/Container.module.css";
 import Image from "next/image";
-import Icon from "../../img/icon.jpeg";
+import Icon from "@/img/icon.jpeg";
 import Icons from "@/components/icon";
 import Tech from "@/components/tech";
 export default function About() {
   return (
     <div className={styles.container}>
-        <div className={styles.row}>
-            <h1 className={`${styles.col12} ${styles.pageTitle}`}>About me</h1>
+        <main className={styles.main}>
+
+        <div className={styles.col12}>
+            <h1 className={styles.pageTitle}>About me</h1>
         </div>
-        <div className={styles.row}>
-            <main className={styles.main}>
                 <Image 
                     src={Icon}
                     width={200}
                     height={200}
                     alt="marnyのアイコン"
                 />
-                <h1 className={styles.description}>Marny</h1>
+                <h1 className={styles.description}>Marny / mani</h1>
                 <p>生息地</p>
                 <div className={styles.col12}>
                     <div className={styles.group}>
@@ -37,7 +37,6 @@ export default function About() {
                     </div>
                 </div>
             </main>
-        </div>
     </div>
   )
 }

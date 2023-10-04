@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Misskey from "../img/misskey.png"
-import Qiita from "../img/qiita.png"
-import Zenn from "../img/zenn.svg"
-import ScrapBox from "../img/scrapbox.png"
+import Misskey from "@/img/misskey.png"
+import Qiita from "@/img/qiita.png"
+import Zenn from "@/img/zenn.svg"
+import ScrapBox from "@/img/scrapbox.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 export default function Icons() {

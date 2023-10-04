@@ -1,8 +1,7 @@
-'use client'
-import styles from '../../styles/Header.module.css';
+import styles from '@/styles/Header.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import Name from "../img/name2.png";
+import Name from "@/img/name2.png";
 export default function Header() {
     return (
         <header className={styles.header}>
@@ -14,11 +13,14 @@ export default function Header() {
                 />
             </Link>
             <div className={styles.buttonGroup}>
-            <Link href="/about" className={styles.button}>
-            ABOUT
+            <Link href="/" className={styles.button}>
+            HOME
             </Link>
             <Link href="/about" className={styles.button}>
             ABOUT
+            </Link>
+            <Link href="/products" className={styles.button}>
+            PRODUCTS
             </Link>
             </div>
         </header>
