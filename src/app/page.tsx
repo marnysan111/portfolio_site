@@ -1,18 +1,23 @@
-import styles from "../../styles/Container.module.css";
+import styles from "@/styles/Container.module.css";
 import Image from "next/image";
-import Icon from "../img/icon.jpeg";
-
+import fes from "@/img/fes.jpg"
 export default function Home() {
   return (
     <div className={styles.container}>
-        <div className={styles.row}>
-            <h1 className={`${styles.col12} ${styles.pagetitle}`}></h1>
+      <div className={styles.main}>
+        <div className={styles.col12}>
+          <h1 className={styles.pageTitle}>トップページ</h1>
         </div>
-        <div className={styles.row}>
-            <main className={styles.main}>
-                
-            </main>
+        書くことないんでこの前行った夏フェスの写真でも
+        <div className={styles.col12}>
+        <Image 
+          src={fes}
+          alt="フェス"
+          layout="responsive"
+        />
         </div>
+        山中湖でやってたんですけど、めちゃ綺麗だった
+      </div>
     </div>
   )
 }
