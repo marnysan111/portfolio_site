@@ -17,7 +17,7 @@ export default function Github() {
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        const response = await fetch('https://api.github.com/users/marnysan111/repos');
+        const response = await fetch('https://api.github.com/users/marnysan111/repos', { next: { revalidate: 3600 }} );
         const data: GithubRepo[] = await response.json();
         setRepos(data);
       } catch (error) {

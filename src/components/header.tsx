@@ -1,7 +1,7 @@
 import styles from '@/styles/Header.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import Name from "@/img/name2.png";
+import Name from "@/img/name.png";
 export default function Header() {
     return (
         <header className={styles.header}>
